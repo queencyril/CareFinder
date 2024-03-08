@@ -71,7 +71,7 @@ const SiginUpPage: React.FC = () => {
         toast.error(handleErrorMessageToShow(error.message));
       } else {
         toast.error(
-          "Could not create user at this time, please try again later"
+          "User's Email already in use, please check the email and try again"
         );
       }
     }
@@ -82,7 +82,8 @@ const SiginUpPage: React.FC = () => {
       <div className="auth-wrapper">
         <Card type="dashboard" className="card_wrapper">
           <form id="signup" name="signup" onSubmit={handleSubmit(onSubmit)}>
-            <div className="input-text">Sign Up</div>
+            <div className="input-text"><h3>Sign up to CareFinder
+              </h3><p>SignUp now and let's help you find the best HealthCare service at your current location</p></div>
             {/* Email Field */}
             <div style={{ marginBottom: 10 }}>
               <Input

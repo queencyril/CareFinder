@@ -376,7 +376,7 @@ export default function HopsitalList() {
       <HospitalNavigation />
       <div className={styles.wrapper}>
         <div className={styles.header_text}>
-          Search for an hospital by state and city.
+          Search for a hospital near by, using your current state and city.
         </div>
         <div className={styles.header}>
           <div className={cn("filters", styles.hospital_filters)}>

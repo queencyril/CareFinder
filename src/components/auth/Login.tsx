@@ -102,12 +102,13 @@ const LoginPage: React.FC = () => {
       <div className="auth-wrapper">
         <Card type="dashboard" className="card_wrapper">
           <form id="login" name="login" onSubmit={handleSubmit(onSubmit)}>
-            <div className="input-text">Welcome back</div>
+            <div className="input-text"><h4>Log in to CareFinder</h4>
+           </div>
             {/* Username Field */}
             <div style={{ marginBottom: 10 }}>
               <Input
                 {...register("email")}
-                label="User Name"
+                label="Email"
                 placeholder="Enter email"
                 hasError={!!errors.email}
                 errorText={errors.email?.message}
